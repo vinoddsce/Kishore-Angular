@@ -1,0 +1,7 @@
+<p>Title: <span style="font-weight: bold;"> {{title}} </span></p>
+
+
+<div>
+  <app-department (changeName)="changeDepartmentName($event)" [deptName]="departmentName"></app-department>
+  <app-student-list></app-student-list>
+</div>
