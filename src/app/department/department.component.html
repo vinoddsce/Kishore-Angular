@@ -1,4 +1,6 @@
 <p>Department Name: {{deptName}}</p>
 
 
-<button (click)="onChangeClicked($event)">Change</button>
+Student Name : <input type="text" name="name" [(ngModel)]="stdName" (change)="onNameChangeHandler($event)" />
+
+<button (click)="onAddStudentClicked($event)">Add</button>

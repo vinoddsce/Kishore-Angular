@@ -7,11 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string = 'My First Angular App !!!!!';
-  departmentName: string = "Pre-Unverisity";
 
-
-  changeDepartmentName(event: string) {
-    console.log("changeDepartmentName() called !!!!", event);
-    this.departmentName = event;
+  addStudentName(event: string) {
+    console.log("addStudentName() called !!!!", event);
   }
 }

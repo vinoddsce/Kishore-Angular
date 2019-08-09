@@ -8,13 +8,13 @@ import { Component, Input, EventEmitter, Output } from '@angular/core';
 export class DepartmentComponent {
 
   @Input() deptName: string = '';
+  @Output() addStudent = new EventEmitter<string>();
+  stdName: string = '';
 
-  @Output() changeName = new EventEmitter<string>()
 
-  onChangeClicked(event: MouseEvent) {
-    // console.log("Clicked !!!!", event);M
-    this.changeName.emit("PUC");
-
+  onNameChangeHandler(event: Event) {
+    console.log("Changed !!!!", this.stdName);
+    this.addStudent.emit(this.stdName);
   }
 
 
