@@ -11,11 +11,7 @@ export class DepartmentComponent {
   @Output() addStudent = new EventEmitter<string>();
   stdName: string = '';
 
-
-  onNameChangeHandler(event: Event) {
-    console.log("Changed !!!!", this.stdName);
+  onAddStudentClicked(event: MouseEvent) {
     this.addStudent.emit(this.stdName);
   }
-
-
 }

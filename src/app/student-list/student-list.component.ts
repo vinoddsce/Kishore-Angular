@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-student-list',
   templateUrl: './student-list.component.html',
   styleUrls: ['./student-list.component.css']
 })
-export class StudentListComponent implements OnInit {
+export class StudentListComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  @Input() stdName: string = ''
 
 }

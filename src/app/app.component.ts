@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string = 'My First Angular App !!!!!';
+  stdName: string = '';
 
   addStudentName(event: string) {
     console.log("addStudentName() called !!!!", event);
+    this.stdName = event;
   }
 }
