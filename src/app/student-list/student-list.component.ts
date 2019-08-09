@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class StudentListComponent {
 
-  @Input() stdName: string = ''
+  @Input() students: Student[] = [];
+
+
 
 }

@@ -8,10 +8,12 @@ import { Component, Input, EventEmitter, Output } from '@angular/core';
 export class DepartmentComponent {
 
   @Input() deptName: string = '';
-  @Output() addStudent = new EventEmitter<string>();
+  @Output() addStudent = new EventEmitter<Student>();
   stdName: string = '';
+  stdCourse: string = '';
+  stdFees: number = 0;
 
   onAddStudentClicked(event: MouseEvent) {
-    this.addStudent.emit(this.stdName);
+    this.addStudent.emit({ name: this.stdName, course: this.stdCourse, fees: this.stdFees });
   }
 }
