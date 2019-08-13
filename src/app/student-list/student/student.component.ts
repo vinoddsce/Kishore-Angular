@@ -12,4 +12,5 @@ export class StudentComponent {
   @Input() course: string;
   @Input() fees: number;
 
+
 }
