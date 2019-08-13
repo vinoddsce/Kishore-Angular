@@ -17,3 +17,5 @@ export class DepartmentComponent {
     this.addStudent.emit({ name: this.stdName, course: this.stdCourse, fees: this.stdFees });
   }
 }
+
+

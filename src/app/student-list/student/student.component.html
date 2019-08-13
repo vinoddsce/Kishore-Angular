@@ -1,0 +1,15 @@
+<div style="width: 100%; ">
+    <span style="margin: 0px 10px; width: 25%; ">{{id}}</span>
+    <span style="margin: 0px 10px; width: 25%; ">{{name}}</span>
+    <span style="margin: 0px 10px; width: 25%; ">{{course}}</span>
+    <span [ngClass]="{red: fees == 0}" [ngStyle]="{'margin': '0px 10px', 'width': '25%', 'font-weight': 'bold'}">{{fees}}</span>
+    <!-- <span *ngIf="fees == 0" style="margin: 0px 10px; color: red;">Not Paid</span>
+    <span *ngIf="fees >= 100" style="margin: 0px 10px; color: green;">Payment Done</span> -->
+
+
+    <!-- <h6 [ngSwitch]="fees">
+        <span *ngSwitchCase="0" style="margin: 0px 10px; color: red;">Not Paid</span>
+        <span *ngSwitchCase="100" style="margin: 0px 10px; color: green;">Payment Done</span>
+        <span *ngSwitchDefault style="margin: 0px 10px;">Payment Pending</span>
+    </h6> -->
+</div>

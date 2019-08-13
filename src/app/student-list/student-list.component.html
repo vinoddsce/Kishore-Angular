@@ -1,1 +1,13 @@
-<p>Student Name Is: {{students[0].fees}}</p>
+<h3>Student Details : </h3>
+
+<h4 style="width: 100%; ">
+    <span style="margin: 0px 10px; width: 25%; ">ID</span>
+    <span style="margin: 0px 10px; width: 25%; ">Name</span>
+    <span style="margin: 0px 10px; width: 25%; ">Course</span>
+    <span style="margin: 0px 10px; width: 25%; ">Fees</span>
+</h4>
+
+<p *ngFor="let student of students; let i=index">
+    <!-- {{student.name}} -->
+    <app-student [id]="i" [name]="student.name" [course]="student.course" [fees]="student.fees"></app-student>
+</p>
